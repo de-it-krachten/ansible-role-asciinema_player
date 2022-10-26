@@ -1,0 +1,13 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+</head>
+<body>
+  <div id="{{ cast }}"></div>
+  <script src="/asciinema-player.js"></script>
+  <script>
+    AsciinemaPlayer.create('/{{ cast | basename }}', document.getElementById('{{ cast | basename | regex_replace('\.cast') }}'));
+  </script>
+  <asciinema-player src="https://{{ asciinema_fqdn }}/{{ cast | basename }}"></asciinema-player>
+</body>
+</html>

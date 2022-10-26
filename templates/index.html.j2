@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>asiicinema screencasts</title>
+</head>
+<body>
+
+On this page, you will find the links to all screencasts.<br>
+For more information, see <a href="https://asciinema.org" >https://asciinema.org</a><br>
+<br>
+<br>
+{% for cast in asciinema_casts %}
+<a href="https://{{ asciinema_fqdn }}/{{ cast | basename | regex_replace('\.cast') }}.html">{{ cast | basename | regex_replace('\.cast') }}</a><br>
+{% endfor %}
+
+</body>
+</html>

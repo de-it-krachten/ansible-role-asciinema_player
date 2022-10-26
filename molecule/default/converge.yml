@@ -1,0 +1,21 @@
+---
+
+- name: Converge
+  hosts: all
+  become: "yes"
+  vars:
+    asciinema_fqdn: asciinema.example.com
+    asciinema_cast_path: files
+    asciinema_html_path: /export/docker/nginx/html
+  pre_tasks:
+    - name: Create 'remote_tmp'
+      ansible.builtin.file:
+        path: /root/.ansible/tmp
+        state: directory
+        mode: "0700"
+  roles:
+    - nginx_docker
+  tasks:
+    - name: Include role 'ansible-role-asciinema_player'
+      ansible.builtin.include_role:
+        name: ansible-role-asciinema_player

@@ -1,0 +1,58 @@
+---
+
+- name: Assertions
+  assert:
+    that:
+      - asciinema_fqdn is defined
+      - asciinema_cast_path is defined
+      - asciinema_html_path is defined
+
+# Get all cast files
+- name: Create list of cast files
+  set_fact:
+    asciinema_casts: >
+      {{ lookup('fileglob', asciinema_cast_path + '/*.cast', wantlist=True)
+        | list
+        | sort }}
+
+- name: Create target location
+  file:
+    path: "{{ asciinema_html_path }}"
+    state: directory
+    mode: "0755"
+
+- name: Copy asciinema code
+  copy:
+    src: "{{ item }}"
+    dest: "{{ asciinema_html_path }}/{{ item }}"
+    mode: "0644"
+  loop:
+    - asciinema-player.css
+    - asciinema-player.js
+
+- name: Copy all casts
+  copy:
+    src: "{{ cast }}"
+    dest: "{{ asciinema_html_path }}/{{ cast | basename }}"
+    mode: "0644"
+  loop: "{{ asciinema_casts }}"
+  loop_control:
+    loop_var: cast
+
+- name: Copy main index.html
+  template:
+    src: index.html.j2
+    dest: "{{ asciinema_html_path }}/index.html"
+    mode: "0644"
+  loop: "{{ asciinema_casts }}"
+  loop_control:
+    loop_var: cast
+
+- name: Create HTML files for each cast
+  template:
+    src: cast.html.j2
+    dest: "{{ asciinema_html_path }}/{{ cast | basename }}.html"
+    mode: "0644"
+  loop: "{{ asciinema_casts }}"
+  loop_control:
+    loop_var: cast

@@ -1,0 +1,40 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-asciinema_player
+  role_short: asciinema_player
+  role_description: |
+    Set-up a webserver to hosts asciinema files
+  collections: []
+
+# documentation
+documentation:
+  required_vars:
+    - name: asciinema_fqdn
+      description: FQDN of the webserver that will host the files
+    - name: asciinema_cast_path
+      description: Location where to search for .cast files
+    - name: asciinema_html_path
+      description: Location where to write HTML/CSS/cast files to
+
+# Supported platforms
+platforms:
+  docker:
+    ci: true
+    supported: true
+
+# Molecule
+molecule:
+  requirements:
+    roles_extra:
+      - nginx_docker
+      - name: openssl
+        version: dev
+  converge:
+    roles:
+      - nginx_docker
+    vars:
+      asciinema_fqdn: asciinema.example.com
+      asciinema_cast_path: files
+      asciinema_html_path: /export/docker/nginx/html
