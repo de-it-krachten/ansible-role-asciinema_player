@@ -1,2 +1,3 @@
 *.err
 molecule/default/molecule.yml
+*.bak
