@@ -60,7 +60,7 @@ Note:
     asciinema_cast_path: files
     asciinema_html_path: /export/docker/nginx/html
   roles:
-    - nginx_docker
+    - deitkrachten.nginx_docker
   tasks:
     - name: Include role 'asciinema_player'
       ansible.builtin.include_role:
