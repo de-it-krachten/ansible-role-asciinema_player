@@ -91,11 +91,11 @@ platforms:
 molecule:
   requirements:
     roles_extra:
-      - nginx_docker
-      - openssl
+      - deitkrachten.nginx_docker
+      - deitkrachten.openssl
   converge:
     roles:
-      - nginx_docker
+      - deitkrachten.nginx_docker
     vars:
       asciinema_fqdn: asciinema.example.com
       asciinema_cast_path: files
