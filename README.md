@@ -60,6 +60,7 @@ Note:
     asciinema_cast_path: files
     asciinema_html_path: /export/docker/nginx/html
   roles:
+    - deitkrachten.showinfo
     - deitkrachten.nginx_docker
   tasks:
     - name: Include role 'asciinema_player'
