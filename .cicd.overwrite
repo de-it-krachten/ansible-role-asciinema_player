@@ -50,6 +50,9 @@ platforms:
   oraclelinux8:
     ci: false
     supported: true
+  oraclelinux9:
+    ci: false
+    supported: true
   almalinux8:
     ci: false
     supported: true
@@ -71,10 +74,10 @@ platforms:
   ubuntu2204:
     ci: false
     supported: true
-  fedora35:
+  fedora36:
     ci: false
     supported: true
-  fedora36:
+  fedora37:
     ci: false
     supported: true
   alpine3:
@@ -88,11 +91,11 @@ platforms:
 molecule:
   requirements:
     roles_extra:
-      - nginx_docker
-      - openssl
+      - deitkrachten.nginx_docker
+      - deitkrachten.openssl
   converge:
     roles:
-      - nginx_docker
+      - deitkrachten.nginx_docker
     vars:
       asciinema_fqdn: asciinema.example.com
       asciinema_cast_path: files
