@@ -7,6 +7,8 @@
     asciinema_fqdn: asciinema.example.com
     asciinema_cast_path: files
     asciinema_html_path: /export/docker/nginx/html
+    nginx_docker_environment: []
+    nginx_docker_networks: []
   roles:
     - deitkrachten.nginx_docker
   tasks:

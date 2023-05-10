@@ -43,7 +43,14 @@ Note:
 ## Role Variables
 ### defaults/main.yml
 <pre><code>
+# FQDN for the service
+# asciinema_fqdn: asciinema.example.com
 
+# Location of the cast files (input)
+# asciinema_cast_path: files
+
+# Location of the cast files (output)
+# asciinema_html_path: /export/docker/nginx/html
 </pre></code>
 
 
@@ -59,6 +66,8 @@ Note:
     asciinema_fqdn: asciinema.example.com
     asciinema_cast_path: files
     asciinema_html_path: /export/docker/nginx/html
+    nginx_docker_environment: []
+    nginx_docker_networks: []
   roles:
     - deitkrachten.nginx_docker
   tasks:
