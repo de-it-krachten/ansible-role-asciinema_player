@@ -1,1 +1,10 @@
 ---
+
+# FQDN for the service
+# asciinema_fqdn: asciinema.example.com
+
+# Location of the cast files (input)
+# asciinema_cast_path: files
+
+# Location of the cast files (output)
+# asciinema_html_path: /export/docker/nginx/html
