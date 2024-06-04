@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.2.0...v1.3.0) (2024-06-04)
+
+
+### Features
+
+* Add support for Ubuntu 24.04 LTS + Fedora 40 ([0f7be68](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/0f7be684e5a12570c1b2bd07012a48a518fe5441))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.1.0...v1.2.0) (2023-08-14)
 
 
