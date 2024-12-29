@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.3.0...v1.4.0) (2024-12-29)
+
+
+### Features
+
+* Update supported platforms & CI ([f4757a0](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/f4757a0b6750677a034aa24cf650b9e48b4d4420))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.2.0...v1.3.0) (2024-06-04)
 
 
