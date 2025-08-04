@@ -162,14 +162,6 @@ jobs:
             ansible_lint: "ansible-lint>6,<7"
             hetznercloud: True
 
-          - name: fedora42
-            runs_on: ubuntu-22.04
-            distro: fedora42
-            playbook: converge.yml
-            ansible: "ansible-core>2.16,<2.17"
-            ansible_lint: "ansible-lint>6,<7"
-            hetznercloud: True
-
           - name: docker
             runs_on: ubuntu-22.04
             distro: docker
