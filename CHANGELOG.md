@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.4.0...v1.5.0) (2025-08-06)
+
+
+### Features
+
+* Add support for AlmaLinux 10 ([212a43b](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/212a43bb81c77a11f5b0b313fe9d1b89d765a310))
+* Add support for Debian 13 (Trixie) ([327a376](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/327a376353bb3e555af6d36985c800b15866931f))
+* Add support for OracleLinux 10 ([2cf321f](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/2cf321fc1dc5a211bc180913c8d54325ff9bd789))
+* Add support for Red Hat Enterprise Linux 10 ([1d7939f](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/1d7939fbec380d21a87a89f1b7920769f149af02))
+* Add support for RockyLinux 10 ([8ced0a4](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/8ced0a410306e73a909125a3e140b0f5ad955d5e))
+* Update supported platforms & CI ([2af25ba](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/2af25baca0545b33d4721507623f4a498ed03cd1))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.3.0...v1.4.0) (2024-12-29)
 
 
