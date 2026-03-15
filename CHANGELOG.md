@@ -1,3 +1,14 @@
+# [1.6.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.5.0...v1.6.0) (2026-03-15)
+
+
+### Features
+
+* Added support for Fedora 43 ([ab3f18b](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/ab3f18b3734552de597cb0b03588f856b793ccf4))
+* Drop support for Debian 10 (Buster) ([70e5d8e](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/70e5d8eb47f076ff5743a13c20a8207f6ead803d))
+* Drop support for Fedora 41 ([c29a851](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/c29a851fd125b888d5c9a83d66782eb6c9e64a47))
+* Drop support for openSUSE Leap 15 ([0cd0d15](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/0cd0d15932508e8bc2c867d17796b0d1e80ea46e))
+* Drop support for SUSE Linux Enterprise 15 ([e325dfa](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/e325dfae739fff15a304bff89d5034b1175b68a8))
+
 # [1.5.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.4.0...v1.5.0) (2025-08-06)
 
 
