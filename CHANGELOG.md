@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.6.0...v1.7.0) (2026-07-26)
+
+
+### Features
+
+* Added support for Fedora 44 ([2b84719](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/2b8471924876f20b1d7a492c0464e73bac9e96be))
+* Added support for Ubuntu 26.04 LTS ([6c76086](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/6c760863ec95a94193c2fec55f77f8d6ad8d336f))
+* Drop support for Fedora 42 ([1aa3754](https://github.com/de-it-krachten/ansible-role-asciinema_player/commit/1aa37548b022cf61c94a4966cc41c4a8b075672a))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-asciinema_player/compare/v1.5.0...v1.6.0) (2026-03-15)
 
 
